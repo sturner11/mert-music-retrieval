@@ -1,0 +1,7 @@
+# Large local datasets and generated audio
+data/raw/gtzan/*/*.wav
+data/interim/
+
+# Notebook/runtime noise
+**/.ipynb_checkpoints/
+*.DS_Store

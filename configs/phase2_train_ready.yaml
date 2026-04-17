@@ -5,6 +5,7 @@ project:
 
 data:
   dataset_name: gtzan
+  dataset_source: kaggle:andradaolteanu/gtzan-dataset-music-genre-classification
   data_root: /Users/samuelturner/Documents/mert-music-retrieval/data/raw/gtzan
   split_dir: /Users/samuelturner/Documents/mert-music-retrieval/artifacts/splits
   train_manifest: /Users/samuelturner/Documents/mert-music-retrieval/artifacts/splits/train.csv

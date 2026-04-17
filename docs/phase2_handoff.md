@@ -24,6 +24,8 @@
 
 ## Risks and notes
 - GTZAN files are not present under the expected root yet; manifests are currently header-only and ready to repopulate once data is added.
+- Dataset source is locked to Kaggle: `andradaolteanu/gtzan-dataset-music-genre-classification`.
+- Corrupt file excluded from preprocessing: `jazz/jazz.00054`.
 - Keep split assignment fixed for all Phase 3 experiments.
 - Keep preprocessing identical across train/val/test to avoid metric drift.
 
