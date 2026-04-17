@@ -80,7 +80,7 @@ This plan is a realistic 4-day, 30-hour project focused on learning and experime
 ## Places to Learn and Compare Ideas
 
 ### Core Conceptual Reference
-- [1508.06576v2.pdf](/Users/samuelturner/Documents/music_sis/1508.06576v2.pdf)
+- [1508.06576v2.pdf](/Users/samuelturner/Documents/mert-music-retrieval/1508.06576v2.pdf)
 
 ### MIR and Evaluation
 - ISMIR papers/tutorials on music similarity and retrieval embeddings

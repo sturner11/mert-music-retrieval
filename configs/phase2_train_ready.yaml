@@ -1,15 +1,15 @@
 project:
-  name: music_sis
+  name: mert-music-retrieval
   phase: 2
   objective: retrieval_embeddings
 
 data:
   dataset_name: gtzan
-  data_root: /Users/samuelturner/Documents/music_sis/data/raw/gtzan
-  split_dir: /Users/samuelturner/Documents/music_sis/artifacts/splits
-  train_manifest: /Users/samuelturner/Documents/music_sis/artifacts/splits/train.csv
-  val_manifest: /Users/samuelturner/Documents/music_sis/artifacts/splits/val.csv
-  test_manifest: /Users/samuelturner/Documents/music_sis/artifacts/splits/test.csv
+  data_root: /Users/samuelturner/Documents/mert-music-retrieval/data/raw/gtzan
+  split_dir: /Users/samuelturner/Documents/mert-music-retrieval/artifacts/splits
+  train_manifest: /Users/samuelturner/Documents/mert-music-retrieval/artifacts/splits/train.csv
+  val_manifest: /Users/samuelturner/Documents/mert-music-retrieval/artifacts/splits/val.csv
+  test_manifest: /Users/samuelturner/Documents/mert-music-retrieval/artifacts/splits/test.csv
   track_id_col: track_id
   path_col: path
   label_col: label

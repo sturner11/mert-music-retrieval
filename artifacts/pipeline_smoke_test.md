@@ -2,7 +2,7 @@
 
 This Phase 2 smoke test validates manifest linkage and basic file accessibility on up to 50 files.
 
-- Data root: `/Users/samuelturner/Documents/music_sis/data/raw/gtzan`
+- Data root: `/Users/samuelturner/Documents/mert-music-retrieval/data/raw/gtzan`
 - Candidate rows available: 0
 - Rows tested: 0
 - Passed: 0

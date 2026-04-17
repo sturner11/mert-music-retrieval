@@ -2,7 +2,7 @@
 
 ## Scope
 This protocol applies to all GTZAN files under:
-`/Users/samuelturner/Documents/music_sis/data/raw/gtzan`
+`/Users/samuelturner/Documents/mert-music-retrieval/data/raw/gtzan`
 
 ## Grouping + IDs
 - Unit of split: full track file (never per clip first).

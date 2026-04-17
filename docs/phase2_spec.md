@@ -4,7 +4,7 @@
 Build a reproducible, leakage-safe GTZAN data pipeline that is ready for MERT retrieval training in Phase 3.
 
 ## Locked Defaults
-- Dataset root: `/Users/samuelturner/Documents/music_sis/data/raw/gtzan`
+- Dataset root: `/Users/samuelturner/Documents/mert-music-retrieval/data/raw/gtzan`
 - Similarity target: performance feel + sound/timbre
 - Sample rate: `24000` Hz (single canonical resample)
 - Channels: mono (mean fold across channels)

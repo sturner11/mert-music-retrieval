@@ -1,7 +1,7 @@
 # GTZAN Audit Summary
 
 - Generated at: 2026-04-16T20:54:12
-- Data root: `/Users/samuelturner/Documents/music_sis/data/raw/gtzan`
+- Data root: `/Users/samuelturner/Documents/mert-music-retrieval/data/raw/gtzan`
 - Total audio files found: **0**
 - OK files: **0**
 - Bad files: **0**
