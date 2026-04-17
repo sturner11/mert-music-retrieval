@@ -5,3 +5,7 @@ data/interim/
 # Notebook/runtime noise
 **/.ipynb_checkpoints/
 *.DS_Store
+
+# Python cache
+__pycache__/
+scripts/__pycache__/

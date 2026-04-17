@@ -1,5 +1,5 @@
 date,hours,activities,roadblocks
-2026-04-16,3.0,"Project setup/exploration/research; reviewed https://arxiv.org/pdf/2208.12415 and https://arxiv.org/pdf/1803.06841; focused reading on https://arxiv.org/pdf/2402.13763 and MERT (https://arxiv.org/abs/2306.00107); studied SSL learning principles and data2vec/word2vec embedding concepts", 
+2026-04-16,5.0,"Project setup/exploration/research; reviewed https://arxiv.org/pdf/2208.12415 and https://arxiv.org/pdf/1803.06841; focused reading on https://arxiv.org/pdf/2402.13763 and MERT (https://arxiv.org/abs/2306.00107); studied SSL learning principles and data2vec/word2vec embedding concepts; preprocessing update: built decode audit, verified 999/1000 decode success, added resampling+amplitude normalization, generated 5s clip manifests/summaries", 
 2026-04-17,,, 
 2026-04-18,,, 
 2026-04-19,,, 
