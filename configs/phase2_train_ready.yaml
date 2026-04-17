@@ -1,0 +1,53 @@
+project:
+  name: music_sis
+  phase: 2
+  objective: retrieval_embeddings
+
+data:
+  dataset_name: gtzan
+  data_root: /Users/samuelturner/Documents/music_sis/data/raw/gtzan
+  split_dir: /Users/samuelturner/Documents/music_sis/artifacts/splits
+  train_manifest: /Users/samuelturner/Documents/music_sis/artifacts/splits/train.csv
+  val_manifest: /Users/samuelturner/Documents/music_sis/artifacts/splits/val.csv
+  test_manifest: /Users/samuelturner/Documents/music_sis/artifacts/splits/test.csv
+  track_id_col: track_id
+  path_col: path
+  label_col: label
+
+preprocessing:
+  sample_rate: 24000
+  channels: mono_mean
+  clip_seconds: 5.0
+  deterministic_crop: true
+  normalization: peak_minus1_to_1
+  short_clip_policy: right_pad_zeros
+
+model:
+  encoder_name: m-a-p/MERT-v1-95M
+  embedding_dim: 256
+  retrieval_head: linear
+  l2_normalize_embeddings: true
+
+training:
+  stage_1:
+    description: frozen encoder warmup
+    freeze_encoder: true
+    epochs: 10
+  stage_2:
+    description: partial unfreeze upper layers
+    freeze_encoder: false
+    unfreeze_policy: top_layers_only
+    epochs: 10
+  batch_size: 16
+  grad_accum_steps: 1
+  optimizer: adamw
+  learning_rate: 0.0001
+
+metrics:
+  primary: recall_at_10
+  secondary:
+    - recall_at_1
+    - recall_at_5
+
+reproducibility:
+  seed: 478
