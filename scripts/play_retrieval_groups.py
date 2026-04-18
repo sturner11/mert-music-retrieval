@@ -3,12 +3,21 @@ import random
 import shutil
 import subprocess
 from typing import Dict, List, Optional
+from pathlib import Path
+import os
+import sys
 
 import pandas as pd
 
-from baseline_retrieval_run import (
-    load_datasets,
-)
+PROJECT_ROOT = Path(
+    os.environ.get("MMR_PROJECT_ROOT", str(Path(__file__).resolve().parents[1]))
+).resolve()
+SRC_ROOT = PROJECT_ROOT / "src"
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
+
+from music_sis.config import BASELINE_RANKINGS_FILE
+from music_sis.data.split_manifests import load_split_dataframes
 
 
 def _pick_player() -> Optional[List[str]]:
@@ -74,7 +83,7 @@ def main() -> None:
     parser.add_argument(
         "--rankings-csv",
         type=str,
-        default="/Users/samuelturner/Documents/mert-music-retrieval/artifacts/baseline_rankings.csv",
+        default=str(BASELINE_RANKINGS_FILE),
         help="Path to rankings CSV from baseline_retrieval_run.py",
     )
     parser.add_argument(
@@ -90,7 +99,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    test_df, _, _ = load_datasets()
+    split_frames = load_split_dataframes()
+    test_df = split_frames["test"]
     rankings_df = pd.read_csv(args.rankings_csv)
     expected_cols = {"query_clip_id", "candidate_clip_id", "rank", "score"}
     missing = expected_cols.difference(rankings_df.columns)
