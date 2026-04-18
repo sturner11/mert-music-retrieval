@@ -1,0 +1,3 @@
+run_name,split,task,R@1,R@5,R@10,num_queries,candidate_pool,self_match_excluded,tie_break_rule
+mfcc_baseline,test,same_track,0.9127324749642346,0.9685264663805436,0.9814020028612304,699,test_all_clips,True,score_desc_then_clip_id_asc
+mfcc_baseline,test,same_genre,0.9585121602288984,0.9856938483547926,0.9885550786838341,699,test_all_clips,True,score_desc_then_clip_id_asc
