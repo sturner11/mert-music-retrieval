@@ -20,6 +20,9 @@ BASELINE_RANKINGS_FILE = ARTIFACTS_DIR / "baseline_rankings.csv"
 MERT_FROZEN_RESULTS_FILE = ARTIFACTS_DIR / "mert_frozen_results.csv"
 MERT_FROZEN_RANKINGS_FILE = ARTIFACTS_DIR / "mert_frozen_rankings.csv"
 MERT_FROZEN_CHECKPOINT_FILE = ARTIFACTS_DIR / "mert_frozen_best_head.pt"
+MERT_PARTIAL_RESULTS_FILE = ARTIFACTS_DIR / "mert_partial_results.csv"
+MERT_PARTIAL_RANKINGS_FILE = ARTIFACTS_DIR / "mert_partial_rankings.csv"
+MERT_PARTIAL_CHECKPOINT_FILE = ARTIFACTS_DIR / "mert_partial_best.pt"
 
 REQUIRED_K_VALUES = (1, 5, 10)
 DEFAULT_MERT_NAME = "m-a-p/MERT-v1-95M"
