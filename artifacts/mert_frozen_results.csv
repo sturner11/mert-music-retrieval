@@ -1,0 +1,3 @@
+run_name,split,task,R@1,R@5,R@10,num_queries,candidate_pool,self_match_excluded,tie_break_rule
+mert_frozen,test,same_track,0.9685264663805436,0.9971387696709585,1.0,699,test_all_clips,True,score_desc_then_clip_id_asc
+mert_frozen,test,same_genre,0.9985693848354793,0.9985693848354793,1.0,699,test_all_clips,True,score_desc_then_clip_id_asc

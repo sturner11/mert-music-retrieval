@@ -1,0 +1,3 @@
+run_name,split,task,R@1,R@5,R@10,num_queries,candidate_pool,self_match_excluded,tie_break_rule
+mert_partial,test,same_track,0.9227467811158798,0.9842632331902719,0.9885550786838341,699,test_all_clips,True,score_desc_then_clip_id_asc
+mert_partial,test,same_genre,0.977110157367668,0.9914163090128756,0.994277539341917,699,test_all_clips,True,score_desc_then_clip_id_asc
